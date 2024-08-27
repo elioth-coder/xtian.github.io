@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to my Website</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      li {
+        list-style-type: square;
+        margin-bottom: 5px;
+      }
+
+      ul > li > ul li {
+        list-style-type: circle;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="position-fixed overflow-visible w-100 top-0 end-0 start-0"
+      style="height: 1px"
+    >
+      <nav class="container mx-auto" style="height: 1px">
+        <div class="row">
+          <div class="col-3 position-sticky vh-100 border-end">
+            <nav class="h-100 flex-column align-items-stretch pe-4 gap-3">
+              <img
+                src="./assets/images/profile-blue.jpg"
+                alt="Profile"
+                class="border d-block my-3 rounded-circle mx-auto border-3 border-primary shadow-lg"
+                style="height: 150px"
+              />
+              <br>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link border-bottom" href="#about">
+                  <i class="bi bi-info-square me-1"></i>
+                  About
+                </a>
+                <a class="nav-link border-bottom" href="#experience">
+                  <i class="bi bi-journal-text me-1"></i>
+                  Experience
+                </a>
+                <a class="nav-link border-bottom" href="#projects">
+                  <i class="bi bi-kanban me-1"></i>
+                  Projects
+                </a>
+                <a class="nav-link border-bottom" href="#skills">
+                  <i class="bi bi-stack-overflow me-1"></i>
+                  Skills
+                </a>
+                <a class="nav-link border-bottom" href="#education">
+                  <i class="bi bi-mortarboard me-1"></i>
+                  Education
+                </a>
+                <a class="nav-link" href="#contact">
+                  <i class="bi bi-envelope me-1"></i>
+                  Contact
+                </a>
+              </nav>
+            </nav>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <main class="container">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-9 bg-light z-3">
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#sidebar"
+            data-bs-smooth-scroll="true"
+            class="d-flex flex-column gap-5 px-5"
+            tabindex="0"
+          >
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand text-primary" href="./">
+                xtian.github.io
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse">
+                <div class="navbar-nav me-auto"></div>
+
+                <section class="d-flex">
+                  <a href="#contact" class="btn btn-outline-primary" type="submit">Hire me!</a>
+                </section>
+              </div>
+            </div>
+          </nav>
+            <div id="cover" class="p-4 gap-4">
+              <h1>
+                Hi, Im
+                <span class="badge text-bg-primary">Christian Peña</span>.
+              </h1>
+              <h3>A programmer, web developer and educator</h3>
+              <p class="text-justify">
+                Self-driven, quick starter, passionate programmer with a curious
+                mind who enjoys solving a complex and challenging real-world
+                problems.
+              </p>
+              <section>
+                <a href="#about" class="btn btn-primary btn-lg">Read more</a>
+                <a href="#contact" class="btn btn-outline-primary btn-lg">
+                  Contact me
+                </a>
+              </section>
+            </div>
+            <div id="about">
+              <h2 class="bg-primary px-5 py-4 text-white rounded">ABOUT</h2>
+              <section class="p-4">
+                <p style="text-align: justify">
+                  I am an Information Technology Grad Student at
+                  <b>Nueva Ecija University of Science and Technology</b>. I
+                  enjoy problem-solving and coding. Always strive to bring 100%
+                  to the work I do. I have worked on technologies like Python,
+                  Flask, MySQL, PostgreSQL, HTML5, CSS, Java, during my
+                  bachelor's.
+                </p>
+                <p style="text-align: justify">
+                  I have more than 3 years of professional work experience as an
+                  educator which helped me strengthen my experience in Python,
+                  Flask, PHP and Javascript. I am passionate about developing
+                  complex applications that solve real-world problems and
+                  sharing my knowledge and experience to my students.
+                </p>
+              </section>
+            </div>
+            <div id="experience">
+              <h2 class="bg-primary px-5 py-4 text-white rounded">
+                EXPERIENCE
+              </h2>
+
+              <section class="p-4">
+                <section class="bg-secondary-subtle border px-4 py-3 mb-3">
+                  <h5>Junior Programmer</h5>
+                  <p class="mb-0">
+                    <i>
+                      Sunlink Technologies Incorporated<br />
+                      1 Year Experience
+                    </i>
+                  </p>
+                </section>
+
+                <ul>
+                  <li>
+                    Developed a comprehensive helpdesk system for restaurant
+                    clients to streamline the logging and documentation of POS
+                    services.
+                  </li>
+                  <li>
+                    Implemented features to automate service scheduling,
+                    real-time updates, and detailed reporting for hardware and
+                    software issue resolution.
+                  </li>
+                  <li>
+                    Enhanced service efficiency and client satisfaction through
+                    effective system integration and deployment.
+                  </li>
+                </ul>
+
+                <section class="mt-5 bg-secondary-subtle border px-4 py-3 mb-3">
+                  <h5>Educator</h5>
+                  <p class="mb-0">
+                    <i>
+                      NEUST Papaya Off-Campus<br />
+                      3 Years Experience
+                    </i>
+                  </p>
+                </section>
+                <ul style="text-align: justify">
+                  <li>
+                    Currently teaching subjects including Mobile App
+                    Development, Web Security and Vulnerabilities, Web System
+                    Technologies, and Integrative Programming using Python.
+                  </li>
+                  <li>
+                    Designed course materials and hands-on projects to provide
+                    students with practical, real-world programming experience.
+                  </li>
+                  <li>
+                    Focus on fostering a learning environment that promotes
+                    critical thinking, problem-solving, and technical skill
+                    development.
+                  </li>
+                </ul>
+              </section>
+            </div>
+            <div id="projects">
+              <h2 class="bg-primary px-5 py-4 text-white rounded">PROJECTS</h2>
+              <section class="p-4" style="text-align: justify">
+                <div class="row m-0 px-3">
+                  <div class="col-5 py-4">
+                    <img
+                      src="./assets/images/project-1.png"
+                      class="w-100 shadow border rounded"
+                      alt="General Tinio Website"
+                    />
+                  </div>
+                  <div class="col-7 py-4">
+                    <h6>Website for Municipality of General Tinio</h6>
+                    <p>
+                      A website to enhance the local government's online
+                      presence and improve access to information for residents
+                      and visitors.
+                    </p>
+                    <p>
+                      It has a user-friendly interface and efficient content
+                      management system.
+                    </p>
+                  </div>
+                </div>
+
+                <hr class="my-4 border-secondary-subtle" />
+
+                <div class="row m-0 px-3 bg-secondary-subtle rounded">
+                  <div class="col-5 py-4">
+                    <img
+                      src="./assets/images/project-2.png"
+                      class="w-100 shadow border rounded"
+                      alt="Scheduling System"
+                    />
+                  </div>
+                  <div class="col-7 py-4">
+                    <h6>Scheduling System for NEUST Papaya Off-Campus</h6>
+                    <p>
+                      A scheduling system for faculty members to streamline the
+                      creation of room assignments and class schedules.
+                    </p>
+                    <p>
+                      This system simplifies administrative tasks, allowing
+                      teachers to focus more on their teaching responsibilities.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div id="skills">
+              <h2 class="bg-primary px-5 py-4 text-white rounded">SKILLS</h2>
+              <section class="p-4">
+                <div class="card p-4 mb-4">
+                  <h5>Languages</h5>
+                  <hr />
+                  : Python, JavaScript, PHP, HTML/CSS
+                </div>
+                <div class="card p-4 mb-4">
+                  <h5>Databases</h5>
+                  <hr />
+                  : MySQL, PostgreSQL, SQLite
+                </div>
+                <div class="card p-4 mb-4">
+                  <h5>Frameworks</h5>
+                  <hr />
+                  : Laravel, Codeigniter, Angular, Bootstrap, Svelte
+                </div>
+              </section>
+            </div>
+            <div id="education">
+              <h2 class="bg-primary px-5 py-4 text-white rounded">EDUCATION</h2>
+              <section class="p-4">
+                <div class="d-flex gap-3">
+                  <div class="col">
+                    <section class="card p-4">
+                        <img src="./assets/images/grad-school-logo.png" class="w-50 mx-auto d-block" alt="Graduate School">
+                        <h6 class="text-center mt-3">
+                        NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY <br>
+                      </h6>
+                      <p class="text-center mb-0">Graduate School</p>
+
+                      <hr>
+                      <p>
+                        <b>Degree: </b> Master of Science in Information
+                        Techology (Student)
+                      </p>
+                      <div>
+                        <b>Relevant Courseworks:</b><br>
+                        <ul>
+                            <li>Mobile App Development</li>
+                            <li>Information Assurance and Security</li>
+                            <li>Web Systems, Frameworks, and Technologies</li>
+                        </ul>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col">
+                    <section class="card p-4">
+                      <img src="./assets/images/undergrad-school-logo.png" class="w-50 mx-auto d-block" alt="Undergraduate School">
+                      <h6 class="text-center mt-3">
+                        NUEVA ECIJA UNIVERSITY OF SCIENCE AND TECHNOLOGY
+                      </h6>
+                      <p class="text-center mb-0">Peñaranda Off-Campus</p>
+                      <hr>
+                      <p>
+                        <b>Degree: </b> Bachelor of Science in Information
+                        Techology (Graduate)
+                      </p>
+                      <div>
+                        <b>Relevant Courseworks:</b><br>
+                        <ul>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Integrative Programming and Technologies</li>
+                            <li>Web Systems and Technologies</li>
+                        </ul>
+                    </section>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div id="contact">
+              <h2 class="bg-primary px-5 py-4 text-white rounded">CONTACT</h2>
+              <section class="p-4">
+                <div class="d-flex gap-3">
+                    <div class="col">
+                        <h3 class="my-4">Contact Information</h3>
+                        <h6 class="my-3">
+                            <button class="btn btn-primary btn-lg rounded-circle me-1">
+                                <i class="bi bi-telephone"></i>
+                            </button>
+                            +6391 5714 9207
+                        </h6>
+                        <h6 class="my-3">
+                            <button class="btn btn-primary btn-lg rounded-circle me-1">
+                                <i class="bi bi-envelope"></i>
+                            </button>
+                            christian940616@gmail.com
+                        </h6>
+                        <h6 class="my-3">
+                            <button class="btn btn-primary btn-lg rounded-circle me-1">
+                                <i class="bi bi-facebook"></i>
+                            </button>
+                            Christian Peña
+                        </h6>
+                    </div>
+                    <div class="col">
+                        <section class="py-4">
+                            <h3 class="mb-4">Send me a message</h3>
+                            <div class="mb-4">
+                                <label for="namr" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Enter your meesage"></textarea>
+                            </div>
+                            <section>
+                                <button class="btn btn-primary btn-lg">
+                                    Send message
+                                </button>
+                            </section>
+                        </section>
+                    </div>
+                  </div>
+              </section>
+            </div>
+          </div>
+          <footer class="py-5 bg-secondary-subtle">
+            <p class="mb-0 text-center">
+                Copyright &copy; 2024
+            </p>
+        </footer>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

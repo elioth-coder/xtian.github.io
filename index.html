@@ -29,6 +29,10 @@
       ul > li > ul li {
         list-style-type: circle;
       }
+
+      #sidebar-nav a:hover {
+        background-color: #eee;
+      }
     </style>
   </head>
   <body>
@@ -40,14 +44,16 @@
         <div class="row">
           <div class="col-3 position-sticky vh-100 border-end">
             <nav class="h-100 flex-column align-items-stretch pe-4 gap-3">
-              <img
-                src="./assets/images/profile-blue.jpg"
-                alt="Profile"
-                class="border d-block my-3 rounded-circle mx-auto border-3 border-primary shadow-lg"
-                style="height: 150px"
-              />
+              <a href="./">
+                <img
+                  src="./assets/images/profile-blue.jpg"
+                  alt="Profile"
+                  class="border d-block my-3 rounded-circle mx-auto border-2 border-primary shadow-lg"
+                  style="height: 150px"
+                />
+              </a>
               <br>
-              <nav class="nav nav-pills flex-column">
+              <nav class="nav nav-pills flex-column" id="sidebar-nav">
                 <a class="nav-link border-bottom" href="#about">
                   <i class="bi bi-info-square me-1"></i>
                   About
@@ -84,14 +90,14 @@
         <div class="col-9 bg-light z-3">
           <div
             data-bs-spy="scroll"
-            data-bs-target="#sidebar"
+            data-bs-target="#sidebar-nav"
             data-bs-smooth-scroll="true"
             class="d-flex flex-column gap-5 px-5"
             tabindex="0"
           >
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand text-primary" href="./">
+              <a class="navbar-brand bg-primary-subtle text-primary border border-primary px-3" href="./">
                 xtian.github.io
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,18 +107,18 @@
                 <div class="navbar-nav me-auto"></div>
 
                 <section class="d-flex">
-                  <a href="#contact" class="btn btn-outline-primary" type="submit">Hire me!</a>
+                  <a href="#contact" class="btn btn-outline-primary">Hire me!</a>
                 </section>
               </div>
             </div>
           </nav>
-            <div id="cover" class="p-4 gap-4">
-              <h1>
+            <div id="cover" class="p-4">
+              <h1 class="mb-3">
                 Hi, Im
                 <span class="badge text-bg-primary">Christian Peña</span>.
               </h1>
-              <h3>A programmer, web developer and educator</h3>
-              <p class="text-justify">
+              <h3 class="mb-3">A programmer, web developer and educator</h3>
+              <p class="mb-4 text-justify">
                 Self-driven, quick starter, passionate programmer with a curious
                 mind who enjoys solving a complex and challenging real-world
                 problems.
@@ -375,7 +381,7 @@
               </section>
             </div>
           </div>
-          <footer class="py-5 bg-secondary-subtle">
+          <footer class="py-4 bg-primary-subtle">
             <p class="mb-0 text-center">
                 Copyright &copy; 2024
             </p>
